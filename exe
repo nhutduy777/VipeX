@@ -1,0 +1,9 @@
+local StarterGui = game:GetService("StarterGui")
+
+local function hideDevConsole()
+    while true do
+        StarterGui:SetCore("DevConsoleVisible", false)
+        wait(1) -- Chờ một giây trước khi kiểm tra lại
+    end
+end
+task.spawn(hideDevConsole)
